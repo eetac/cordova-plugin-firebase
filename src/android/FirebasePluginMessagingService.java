@@ -109,7 +109,7 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
             if(android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP){
 				int iconID = android.R.id.icon;
 				int notiID = getResources().getIdentifier("notification_big", "drawable", getPackageName());
-                notification.contentView.setImageViewResource(iconID, notiID);
+                //notification.contentView.setImageViewResource(iconID, notiID);
             }
             NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
