@@ -99,11 +99,11 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
                 notificationBuilder.setSmallIcon(getApplicationInfo().icon);
             }
 
-            if(android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.MARSHMALLOW)
-            {
+            //if(android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.MARSHMALLOW)
+            //{
 				//int accentID = getResources().getIdentifier("accent", "color", getPackageName());
                 //notificationBuilder.setColor(getResources().getColor(accentID, null));				
-            }
+            //}
             
             Notification notification = notificationBuilder.build();
             if(android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP){
